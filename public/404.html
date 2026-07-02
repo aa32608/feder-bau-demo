@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Feder Bau</title>
+    <script>
+      // GitHub Pages SPA redirect – send back to index with HashRouter
+      // Preserve path
+      var l = window.location;
+      var repo = '/feder-bau-demo';
+      var path = l.pathname.replace(repo, '');
+      if (path && path !== '/' && path !== '/index.html') {
+        // redirect to hash route
+        l.replace(l.protocol + '//' + l.host + repo + '/#' + path + l.search + l.hash);
+      } else {
+        l.replace(repo + '/');
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

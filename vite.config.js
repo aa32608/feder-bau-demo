@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  // GitHub Pages project site: https://aa32608.github.io/feder-bau-demo/
+  // Must match repo name exactly or assets 404 (main.jsx error)
+  base: '/feder-bau-demo/',
   plugins: [react()],
 })
