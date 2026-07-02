@@ -7,14 +7,6 @@ export default function Header() {
   const { language, setLanguage, t } = useLanguage()
   const [open, setOpen] = useState(false)
 
-  const navItems = [
-    { to: '/', label: { sq: 'Kreu', mk: 'Почетна', en: 'Home' } },
-    { to: '/products', label: t.nav[1] || 'Products' }, // Dyshekët
-    { to: '/collections', label: t.nav[0] || 'Collections' },
-    { to: '/about', label: t.nav[2] || 'About' },
-    { to: '/contact', label: t.nav[4] || 'Contact' },
-  ]
-
   // normalize: if t.nav items are strings, use them directly
   const navLinks = [
     { to: '/', key: 'home' },

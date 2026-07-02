@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext'
 
 export default function Footer() {
-  const { t, language } = useLanguage()
+  const { t } = useLanguage()
 
   return (
     <footer>
